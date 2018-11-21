@@ -1,4 +1,4 @@
-var tagTranslation = {
+const tagTranslation = {
 	"ból" : "búl",
 	"ből" : "bűl",
 	"tól" : "túl",
@@ -11,7 +11,7 @@ var tagTranslation = {
 	"olni" : "óni"
 };
 
-var wordTranslation = {
+const wordTranslation = {
 	",[\ ]*hogy[\ ]+" : ", ",
 	"[\ ]+a[\ ]+" : " ",
 	"[\ ]+az[\ ]+" : " ",
@@ -103,4 +103,4 @@ var wordTranslation = {
 	"kontár": "kantár"
 };
 
-karcsization(tagTranslation, wordTranslation);
+karlization(tagTranslation, wordTranslation);
