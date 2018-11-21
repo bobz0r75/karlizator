@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name		Karlizator
 // @namespace	http://tampermonkey.net/
-// @version		1.0.1
+// @version		1.0.2
 // @description	Translate webpages from hungarian to Karl
 // @author		Bence DEMETER
 // @match		http*://*/*
