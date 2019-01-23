@@ -8,7 +8,7 @@
 // @grant		none
 // ==/UserScript==
 
-const KARLIZATOR_JSONP_URL = "https://raw.githubusercontent.com/bobz0r75/karlizator/master/jsonp/karlizator-jsonp.js";
+const KARLIZATOR_JSONP_URL = "https://drive.google.com/uc?export=download&id=1INERNIG9sKocLot30auvGdshA5g7ldl5";
 
 (function() {
 	'use strict';
