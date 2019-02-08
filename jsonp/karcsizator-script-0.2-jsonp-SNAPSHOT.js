@@ -22,6 +22,7 @@ const wordTranslation = {
     "az egész univerzumot": "minden univerzumot",
     "bamboo": "bambó",
     "bármi kérdés van": "bármit kérdés",
+    "beállítás": "bestialitás",
     "bentről": "bentrünnen",
     "bonyolult": "anyacsavart",
     "cifrább": "cifrasabb",
