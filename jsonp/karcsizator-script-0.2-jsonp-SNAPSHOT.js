@@ -79,6 +79,7 @@ const wordTranslation = {
     "keresztül-kasul": "keresztbe kasuba",
     "kintről": "kintrünnen",
     "koncentrál": "koncertrál",
+    "konszenzus": "konzesus",
     "kontár": "kantár",
     "következményeket": "folyományokat",
     "következmények": "folyományok",
