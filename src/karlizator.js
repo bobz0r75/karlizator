@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name		Karlizator
 // @namespace	http://tampermonkey.net/
-// @version		1.0.4
+// @version		1.1-SNAPSHOT
 // @description	Translate webpages from hungarian to Karl
 // @author		Bence DEMETER
 // @match		http*://*/*
@@ -44,13 +44,15 @@ const KARLIZATOR_JSONP_URL = "https://drive.google.com/uc?export=download&id=1IN
 			}
 		};
 
-		walkDiv(document.getElementsByTagName('body')[0], function(node) {
+		let walkDivCb = function(node) {
 			let parent = node.parentNode;
 			let newText = karlizate(node.data);
 			let newNode = document.createTextNode(newText);
 			parent.insertBefore(newNode, node);
 			parent.removeChild(node);
-		});
+		};
+
+		walkDiv(document.getElementsByTagName('body')[0], walkDivCb);
 	};
 
 	if (window === window.top) {
