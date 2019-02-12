@@ -138,6 +138,7 @@ const wordTranslation = {
     "tiszta ügy": "tiszta liba",
     "tisztában va": "tiszta va",
     "több,? mint valószínű": "több mint valószínűsítem",
+    "tudomás": "tudomány",
     "tudom": "vágom",
     "tudott": "tudatot",
     "valóban": "kúvára",
