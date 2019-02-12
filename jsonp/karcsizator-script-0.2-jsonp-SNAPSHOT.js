@@ -142,6 +142,7 @@ const wordTranslation = {
     "tudom": "vágom",
     "tudott": "tudatot",
     "valóban": "kúvára",
+    "vágomány": "tudomány",
     "viszonylagos": "viszonyban mérhető",
     "voln": "vón",
     "volt": "vót"
