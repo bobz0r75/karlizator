@@ -1,14 +1,6 @@
 const tagTranslation = {
-	"ból": "búl",
-	"ből": "bűl",
-	"tól": "túl",
-	"től": "tűl",
-	"ról": "rúl",
-	"ről": "rűl",
-	"ban": "ba'",
-	"ben": "be'",
-	"olna": "óna",
-	"olni": "óni"
+	"ból": "búl", "ből": "bűl", "tól": "túl", "től": "tűl", "ról": "rúl",
+	"ről": "rűl", "ban": "ba'", "ben": "be'", "olna": "óna", "olni": "óni"
 };
 
 const wordTranslation = {
@@ -27,6 +19,7 @@ const wordTranslation = {
     "bonyolult": "anyacsavart",
     "cifrább": "cifrasabb",
     "cizellál": "cecilál",
+    "cross site scripting": "kroszkripszkrájt",
     "csavaros[\ ]+": "nyakakevert ",
     "csillag": "csillár",
     "csinál": "kalimpál",
@@ -36,12 +29,12 @@ const wordTranslation = {
     "dolg": "dóg",
     "döcögősen": "döcösön",
     "döcögve": "döcösön",
-    "egyik évről": "egyrül évrül",
-    "egyik hétről": "egyrül hétrül",
-    "egyik hónapról": "egyrül hónaprul",
-    "egyik napról": "egyrül naprul",
-    "egyik óráról": "egyrül órárul",
-    "egyik percről": "egyrül percrül",
+    "egyik évről": "egyrül évrűl",
+    "egyik hétről": "egyrül hétrűl",
+    "egyik hónapról": "egyrül hónaprúl",
+    "egyik napról": "egyrül naprúl",
+    "egyik óráról": "egyrül órárúl",
+    "egyik percről": "egyrül percrűl",
     "elégedve": "elégedett",
     "ellentmondásos": "anyacsavart",
     "elmúlt": "homályba ment",
@@ -92,15 +85,14 @@ const wordTranslation = {
     "lebegőpont": "levegőpont",
     "lentről": "lentrünnen",
     "megcsinál": "kikalimpál",
-    "megcsinált": "kikalimpált",
-    "megcsúsz": "megsikl",
     "megcsúszt": "megsiklott",
+    "megcsúsz": "megsikl",
     "meghalt": "meghótt",
     "melyik": "mék",
     "mikorra": "mikorára",
     "mindent": "minden univerzumot",
-    "minőségi": "minőséges",
     "minőségileg": "minőségesen",
+    "minőségi": "minőséges",
     "mitévők legyenek": "mi legyenek tévő",
     "mitévők legyünk": "mi legyünk tévő",
     "mitévő legyek": "mi legyek tévő",
@@ -145,7 +137,8 @@ const wordTranslation = {
     "vágomány": "tudomány",
     "viszonylagos": "viszonyban mérhető",
     "voln": "vón",
-    "volt": "vót"
+    "volt": "vót",
+    "xss": "kroszkripszkrájt"
 };
 
 karlization(tagTranslation, wordTranslation);

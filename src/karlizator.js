@@ -33,18 +33,18 @@ const KARLIZATOR_JSONP_URL = "https://drive.google.com/uc?export=download&id=1IN
 			return text;
 		};
 
-		let walkDiv = function(el, fn) {
+		let walkDiv = function(el, func) {
 			for (let i = 0, len = el.childNodes.length; i < len; i++) {
 				let node = el.childNodes[i];
-				if (node.nodeType === 3) {
-					fn(node);
-				} else if (node.nodeType === 1 && node.nodeName !== "SCRIPT") {
-					walkDiv(node, fn);
+				if (node.nodeType === Node.TEXT_NODE) {
+					func(node);
+				} else if (node.nodeType === Node.ELEMENT_NODE && node.nodeName !== "SCRIPT") {
+					walkDiv(node, func);
 				}
 			}
 		};
 
-		let walkDivCb = function(node) {
+		let replaceNodeText = function(node) {
 			let parent = node.parentNode;
 			let newText = karlizate(node.data);
 			let newNode = document.createTextNode(newText);
@@ -52,7 +52,7 @@ const KARLIZATOR_JSONP_URL = "https://drive.google.com/uc?export=download&id=1IN
 			parent.removeChild(node);
 		};
 
-		walkDiv(document.getElementsByTagName('body')[0], walkDivCb);
+		walkDiv(document.getElementsByTagName('body')[0], replaceNodeText);
 	};
 
 	if (window === window.top) {
