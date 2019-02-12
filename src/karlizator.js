@@ -8,7 +8,7 @@
 // @grant		none
 // ==/UserScript==
 
-const KARLIZATOR_JSONP_URL = "https://drive.google.com/uc?export=download&id=1INERNIG9sKocLot30auvGdshA5g7ldl5";
+const KARLIZATOR_JSONP_URL = "https://drive.google.com/uc?export=download&id=11HM-75X2IPG_8by5FvR6e0MO674Msikt";
 
 (function() {
 	'use strict';
@@ -16,19 +16,15 @@ const KARLIZATOR_JSONP_URL = "https://drive.google.com/uc?export=download&id=1IN
 	window.karlization = function(tagTrans, wordTrans) {
 
 		let karlizate = function(text) {
-			for (let key in wordTrans) {
-				if (wordTrans.hasOwnProperty(key)) {
-					let rx = new RegExp(key, 'g');
-					let rx2 = new RegExp(key.substring(0, 1).toUpperCase() + key.substring(1), 'g');
-					let mire = wordTrans[key].substring(0, 1).toUpperCase() + wordTrans[key].substring(1);
-					text = text.replace(rx, wordTrans[key]).replace(rx2, mire);
-				}
+			for (let entry of wordTrans) {
+				let rx = new RegExp(entry.key, 'g');
+				let rx2 = new RegExp(entry.key.substring(0, 1).toUpperCase() + entry.key.substring(1), 'g');
+				let mire = entry.value.substring(0, 1).toUpperCase() + entry.value.substring(1);
+				text = text.replace(rx, entry.value).replace(rx2, mire);
 			}
-			for (let key in tagTrans) {
-				if (tagTrans.hasOwnProperty(key)) {
-					let rx = new RegExp(key + '([\ \W\n\.,:;?!<"”)]+)', 'gi');
-					text = text.replace(rx, tagTrans[key] + '$1').replace(new RegExp(key + '$'), tagTrans[key]);
-				}
+			for (let entry of tagTrans) {
+				let rx = new RegExp(entry.key + '([\ \W\n\.,:;?!<"”)]+)', 'gi');
+				text = text.replace(rx, entry.value + '$1').replace(new RegExp(entry.key + '$'), entry.value);
 			}
 			return text;
 		};
