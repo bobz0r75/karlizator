@@ -29,14 +29,18 @@ const KARLIZATOR_JSONP_URL = "https://drive.google.com/uc?export=download&id=11H
 			return text;
 		};
 
+		let handleNode = function(node, func, backFunc) {
+			if (node.nodeType === Node.TEXT_NODE) {
+				func(node);
+			} else if (node.nodeType === Node.ELEMENT_NODE && node.nodeName !== "SCRIPT") {
+				backFunc(node, func);
+			}
+		};
+
 		let walkDiv = function(el, func) {
 			for (let i = 0, len = el.childNodes.length; i < len; i++) {
 				let node = el.childNodes[i];
-				if (node.nodeType === Node.TEXT_NODE) {
-					func(node);
-				} else if (node.nodeType === Node.ELEMENT_NODE && node.nodeName !== "SCRIPT") {
-					walkDiv(node, func);
-				}
+				handleNode(node, func, walkDiv);
 			}
 		};
 

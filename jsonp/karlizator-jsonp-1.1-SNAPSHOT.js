@@ -82,6 +82,7 @@ let wordTranslation = [
     { "key": "kerek perec", "value": "keret perec" },
     { "key": "keresztül kasul", "value": "keresztbe kasuba" },
     { "key": "keresztül-kasul", "value": "keresztbe kasuba" },
+    { "key": "kiigazod", "value": "kiigazolód" },
     { "key": "kintről", "value": "kintrünnen" },
     { "key": "koncentrál", "value": "koncertrál" },
     { "key": "konszenzus", "value": "konzesus" },
