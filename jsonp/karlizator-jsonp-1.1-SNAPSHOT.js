@@ -121,6 +121,7 @@ let wordTranslation = [
     { "key": "ordenáré", "value": "ordibári" },
     { "key": "ördöngősség", "value": "ördongség" },
     { "key": "otthonról", "value": "otthonrünnen" },
+    { "key": "puszipajtás", "value": "puszibarát" },
     { "key": "régi szép idők", "value": "jó öreg idők" },
     { "key": "relativitás", "value": "relavitás" },
     { "key": "rendetlenkedik", "value": "szarokszik" },
