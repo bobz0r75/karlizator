@@ -50,6 +50,7 @@ let wordTranslation = [
     { "key": "elromlani", "value": "elrosszulni" },
     { "key": "elromlik", "value": "elrosszul" },
     { "key": "elromlott", "value": "elrosszult" },
+    { "key": "evakuál", "value": "eukadál" },
     { "key": "farag", "value": "faridzsgál" },
     { "key": "faramuci", "value": "furamaci" },
     { "key": "farigcsál", "value": "faridzsgál" },
