@@ -80,6 +80,7 @@ let wordTranslation = [
     { "key": "időintervallum", "value": "ablakintervallum" },
     { "key": "intervallum", "value": "ablakintervallum" },
     { "key": "jelentkez", "value": "jelenez" },
+    { "key": "jéghegy csúcsa", "value": "jégcsecs úcsa" },
     { "key": "jobban", "value": "még kúvábbra" },
     { "key": "kalapál", "value": "kalimpál" },
     { "key": "kapcsolatban", "value": "kapcsán" },
