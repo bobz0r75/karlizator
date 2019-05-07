@@ -73,6 +73,7 @@ let wordTranslation = [
     { "key": "gyárt", "value": "kalimpál" },
     { "key": "gyártott", "value": "kalimpált" },
     { "key": "gyűlés", "value": "gyülekezet" },
+    { "key": "halálos ágy", "value": "halálágy" },
     { "key": "halálos", "value": "halálatos" },
     { "key": "herót", "value": "heród" },
     { "key": "időablak", "value": "ablakintervallum" },
