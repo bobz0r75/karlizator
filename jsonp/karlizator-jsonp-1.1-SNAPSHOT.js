@@ -155,6 +155,7 @@ let wordTranslation = [
     { "key": "tudott", "value": "tudatot" },
     { "key": "valóban", "value": "kúvára" },
     { "key": "vágomány", "value": "tudomány" },
+    { "key": "villáml", "value": "villámz" },
     { "key": "viszonylagos", "value": "viszonyban mérhető" },
     { "key": "voln", "value": "vón" },
     { "key": "volt", "value": "vót" },
