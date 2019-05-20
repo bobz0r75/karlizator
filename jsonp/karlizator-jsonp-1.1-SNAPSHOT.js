@@ -140,6 +140,7 @@ let wordTranslation = [
     { "key": "sima liba", "value": "tiszta liba" },
     { "key": "sima ügy", "value": "tiszta liba" },
     { "key": "szemlátomást", "value": "szemlátomással" },
+    { "key": "szocializál", "value": "szociáloz" },
     { "key": "szolg", "value": "szóg" },
     { "key": "szöszmöszöl", "value": "szötymötyöl" },
     { "key": "tapogat", "value": "taperol" },
