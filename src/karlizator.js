@@ -48,15 +48,9 @@ const KARLIZATOR_JSONP_URL = "https://drive.google.com/uc?export=download&id=11H
             }
         };
 
-        let karlizate = text => {
-            text = replaceTexts(text);
-            text = replaceTags(text);
-            return text;
-        };
-
         let replaceNodeText = node => {
             let parent = node.parentNode;
-            parent.insertBefore(document.createTextNode(karlizate(node.data)), node);
+            parent.insertBefore(document.createTextNode(replaceTags(replaceTexts(node.data))), node);
             parent.removeChild(node);
         };
 
